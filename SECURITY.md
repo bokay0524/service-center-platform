@@ -1,8 +1,8 @@
-# Security Policy
+# 보안 정책
 
-This repository is a public portfolio project.
+공개 포트폴리오 프로젝트입니다.
 
-- Never commit real customer data, employee data, internal company URLs or private source code.
-- Never commit `.env`, API keys, passwords, OAuth client secrets or database credentials.
-- Use only mock adapters for private ERP / notification / delivery systems in the public repository.
-- If a secret is accidentally committed, remove it from Git history and rotate the credential immediately.
+실제 고객 데이터, 직원 데이터, 사내 URL 또는 비공개 소스 코드를 절대 커밋하지 마십시오.
+.env 파일, API 키, 비밀번호, OAuth 클라이언트 시크릿 또는 데이터베이스 자격 증명을 절대 커밋하지 마십시오.
+공개 저장소에서는 비공개 ERP, 알림 또는 배송 시스템을 위해 모의(mock) 어댑터만 사용하십시오.
+실수로 보안 정보(secret)가 커밋된 경우, 즉시 Git 기록에서 삭제하고 해당 자격 증명을 교체(rotate)하십시오.
