@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: service-center-portfolio
+  profiles:
+    default: demo
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+server:
+  port: 8080
+
+app:
+  jwt:
+    expiration-minutes: 120
+  privacy:
+    retention-years: 5
+  cors:
+    allowed-origin: ${CORS_ALLOWED_ORIGIN:http://localhost:5173}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never

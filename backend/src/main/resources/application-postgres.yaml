@@ -1,0 +1,15 @@
+spring:
+  config:
+    activate:
+      on-profile: postgres
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/service_center}
+    username: ${POSTGRES_USER:portfolio}
+    password: ${POSTGRES_PASSWORD:portfolio}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+app:
+  jwt:
+    secret: ${JWT_SECRET}
